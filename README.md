@@ -95,123 +95,10 @@ O arquivo é gerado localmente pelo Streamlit e pode ser baixado pelo usuário.
 
 ---
 
-## 4. Arquivos do projeto
-
-Estrutura recomendada:
-
-```text
-ctr-cybercheck/
-│
-├── ctr_cybercheck_streamlit_pdf.py
-├── requirements_ctr_cybercheck.txt
-├── README.md
-└── .gitignore
-```
-
-### Arquivo principal
-
-`ctr_cybercheck_streamlit_pdf.py`
-
-Contém:
-
-- interface Streamlit;
-- perguntas;
-- lógica de pontuação;
-- classificação de maturidade;
-- recomendações;
-- geração dos gráficos;
-- geração do PDF.
-
-### Dependências
-
-`requirements_ctr_cybercheck.txt`
-
-```text
-streamlit>=1.36
-matplotlib>=3.8
-reportlab>=4.0
-```
 
 ---
 
-## 5. Requisitos
-
-### Software
-
-Recomendado:
-
-- Python 3.10 ou superior;
-- pip;
-- navegador moderno;
-- sistema Windows, Linux ou macOS.
-
-### Verificar Python
-
-```bash
-python --version
-```
-
-ou:
-
-```bash
-python3 --version
-```
-
----
-
-## 6. Instalação
-
-Clone ou copie o projeto para uma pasta local.
-
-Entre no diretório:
-
-```bash
-cd ctr-cybercheck
-```
-
-Crie um ambiente virtual:
-
-### Windows
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-### Linux/macOS
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-Instale as dependências:
-
-```bash
-pip install -r requirements_ctr_cybercheck.txt
-```
-
----
-
-## 7. Executando a aplicação
-
-Execute:
-
-```bash
-streamlit run ctr_cybercheck_streamlit_pdf.py
-```
-
-O Streamlit normalmente disponibilizará a aplicação no endereço:
-
-```text
-http://localhost:8501
-```
-
-Abra o endereço no navegador.
-
----
-
-## 8. Fluxo de utilização
+## 4. Fluxo de utilização
 
 O fluxo básico é:
 
@@ -239,7 +126,7 @@ CTA para contato com a CTR DEFENSE
 
 ---
 
-## 9. Público-alvo
+## 5. Público-alvo
 
 A ferramenta foi pensada principalmente para:
 
@@ -254,7 +141,7 @@ A ferramenta foi pensada principalmente para:
 
 ---
 
-## 10. Uso comercial pela CTR DEFENSE
+## 6. Uso comercial pela CTR DEFENSE
 
 O CyberCheck pode funcionar como um **lead magnet** no site da CTR DEFENSE.
 
@@ -291,7 +178,7 @@ Após o assessment, a CTR DEFENSE pode oferecer serviços como:
 
 ---
 
-## 11. Recomendações comerciais
+## 7. Recomendações comerciais
 
 O resultado gratuito deve ser apresentado como uma **avaliação inicial**, evitando transformar o score em uma promessa de segurança absoluta.
 
@@ -313,7 +200,7 @@ AGENDAR DIAGNÓSTICO
 
 ---
 
-## 12. Privacidade e proteção de dados
+## 8. Privacidade e proteção de dados
 
 Caso a aplicação seja publicada na internet, recomenda-se implementar controles adicionais para tratamento dos dados informados pelos participantes.
 
@@ -337,7 +224,7 @@ Se os dados forem armazenados ou enviados para terceiros, a arquitetura deve ser
 
 ---
 
-## 13. Segurança da aplicação
+## 9. Segurança da aplicação
 
 Antes de colocar a ferramenta em produção, recomenda-se:
 
@@ -356,7 +243,7 @@ Antes de colocar a ferramenta em produção, recomenda-se:
 
 ---
 
-## 14. Implantação em produção
+## 10. Implantação em produção
 
 A aplicação pode ser hospedada em diferentes ambientes, por exemplo:
 
@@ -387,7 +274,7 @@ Streamlit
 
 ---
 
-## 15. Possíveis evoluções
+## 11. Possíveis evoluções
 
 A versão atual pode ser evoluída para uma plataforma comercial completa.
 
@@ -451,7 +338,7 @@ Futuras versões podem mapear resultados para:
 
 ---
 
-## 16. Limitações
+## 12. Limitações
 
 O CyberCheck não realiza automaticamente:
 
@@ -472,7 +359,7 @@ Por isso, o resultado deve ser interpretado como **indicativo de maturidade**, e
 
 ---
 
-## 17. Metodologia
+## 13. Metodologia
 
 A estrutura do assessment utiliza conceitos alinhados ao **NIST Cybersecurity Framework 2.0**, especialmente suas seis funções:
 
@@ -494,7 +381,7 @@ O questionário foi adaptado para uma avaliação inicial de empresas e não con
 
 ---
 
-## 18. Exemplo de resultado
+## 14. Exemplo de resultado
 
 Um resultado hipotético:
 
@@ -524,7 +411,7 @@ Interpretação:
 
 ---
 
-## 19. Boas práticas para evolução do projeto
+## 15. Boas práticas para evolução do projeto
 
 Para desenvolvimento contínuo:
 
@@ -541,64 +428,10 @@ Para desenvolvimento contínuo:
 
 ---
 
-## 20. Licença e propriedade
+## 16. Licença e propriedade
 
 Este projeto foi desenvolvido para utilização da **CTR DEFENSE**.
 
 O conteúdo, metodologia adaptada, identidade visual, textos comerciais e materiais relacionados devem ser tratados conforme os direitos e condições definidos pela CTR DEFENSE.
 
----
 
-## 21. Marca
-
-**CTR DEFENSE**
-
-Consultoria em Segurança Cibernética
-
-**Proteção, Prevenção e Resiliência**
-
-Website:
-
-https://ctrdefense.io
-
----
-
-## 22. Roadmap sugerido
-
-### Versão 1.0
-- [x] Questionário com 25 perguntas
-- [x] Score de 0–100
-- [x] Classificação de maturidade
-- [x] Análise por dimensão
-- [x] Recomendações
-- [x] Gráficos
-- [x] Geração de PDF
-
-### Versão 2.0
-- [ ] Logo CTR DEFENSE no relatório
-- [ ] Personalização visual da aplicação
-- [ ] Envio automático do PDF por e-mail
-- [ ] Integração com WhatsApp
-- [ ] Banco de dados
-- [ ] CRM
-- [ ] Dashboard administrativo
-
-### Versão 3.0
-- [ ] Login administrativo
-- [ ] Histórico de assessments
-- [ ] Comparação entre avaliações
-- [ ] Plano de ação automático
-- [ ] Matriz de riscos
-- [ ] Roadmap 30/60/90 dias
-- [ ] Integração com ISO 27001/NIST/CIS
-- [ ] Gestão de leads e oportunidades
-
----
-
-## 23. Contato
-
-**CTR DEFENSE — Consultoria em Segurança Cibernética**
-
-Protegemos o que mantém o seu negócio em movimento.
-
-Website: https://ctrdefense.io
