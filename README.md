@@ -93,41 +93,6 @@ Após o preenchimento do assessment, a aplicação permite gerar um relatório P
 
 O arquivo é gerado localmente pelo Streamlit e pode ser baixado pelo usuário.
 
----
-
-
----
-
-## 4. Fluxo de utilização
-
-O fluxo básico é:
-
-```text
-Acesso ao CyberCheck
-        ↓
-Dados da empresa
-        ↓
-25 perguntas
-        ↓
-Cálculo do score
-        ↓
-Classificação da maturidade
-        ↓
-Resultado por dimensão
-        ↓
-Recomendações
-        ↓
-Geração do relatório PDF
-        ↓
-Download do relatório
-        ↓
-CTA para contato com a CTR DEFENSE
-```
-
----
-
-
-
 
 ---
 
@@ -178,6 +143,3 @@ Para desenvolvimento contínuo:
 10. validar a metodologia com profissionais de segurança.
 
 ---
-
-
-
